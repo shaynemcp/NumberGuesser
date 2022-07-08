@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+
+
+namespace NumberGuesser
+{   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Number Guesser");
+            //insert instructions method here
+            //insert guesser method here
+
+        }
+    }
+ 
+}
+     
