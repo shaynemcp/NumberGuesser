@@ -8,7 +8,7 @@ namespace NumberGuesser
 {
     class Prompts
     {
-        static void instructions()
+        public static void instructions()
         {
             Console.WriteLine("As a player, you will input a guess from 1 through 10");
             
@@ -18,12 +18,12 @@ namespace NumberGuesser
             Console.WriteLine("Thank you {0}, we will now begin.", name);
         }
 
-        static void guesser()
+        public static void guesser()
         {
             Console.WriteLine("Insert a number now.");
             int guess = 0;
 
-            while(guess != 0)
+            while(guess > 0 && guess < 10)
             {
                guess = Console.Read();
 
@@ -33,6 +33,7 @@ namespace NumberGuesser
                     break;
                 }
             }
+            Console.ReadKey();
         }
     }
 }
